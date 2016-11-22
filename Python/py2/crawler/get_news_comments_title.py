@@ -54,7 +54,9 @@ class Tiezi:
         em = re.findall(emoji,items[0])
         
         removeAddr = re.compile('<img src.*?/>')#去除表情
+        removeLink = re.compile('<a href.*?</a>')#去除链接
         items[0] = re.sub(removeAddr,"",items[0])
+        items[0] = re.sub(removeLink,"",items[0])
         
         for a in range(len(em)):
             items[0] = items[0]+' '+em[a]
@@ -63,14 +65,19 @@ class Tiezi:
         emc = re.findall(emoji,titlecomment[0])
         
         titlecomment[0] = re.sub(removeAddr,"",titlecomment[0])
+        titlecomment[0] = re.sub(removeLink,"",titlecomment[0])
         titlecomment[0] = titlecomment[0].strip()
         for a in range(len(emc)):
             titlecomment[0] = titlecomment[0]+' '+emc[a]      
         titlecomment[0] =titlecomment[0].replace("<br>"," ")
         items[0] = items[0].replace("<br>"," ")
+        
         f = open('ls.txt','a') # 文件名最好是英文，中文识别不了
         f.write('\n'+self.date + '\t' +str(self.reading)+'\t'+str(self.commenting)+'\t'+ items[0].strip()+'\t'+titlecomment[0].strip() +'\t')
         f.close()
+        
+        #print items[0]
+        #print titlecomment[0]
         return items
 
     # 获取正文
@@ -86,17 +93,20 @@ class Tiezi:
             #i = re.sub(removeAddr,"",i)# 找到并替换，比replace更强大
             
             removeAddr = re.compile('<img src.*?/>')#去除表情
+            removeLink = re.compile('<a href.*?</a>')#去除链接
             em = re.findall(emoji,i)
             i = re.sub(removeAddr,"",i)
+            i = re.sub(removeLink,"",i)
             i = i.replace("<br>"," ")
             #print i
             for a in range(len(em)):
                 i = i +" "+em[a]
             #print i
+            
             f = open('ls.txt','a')# 此处是写入正文内容，所以用a
             f.write(i+' ')
             f.close()
-
+            
         
 
 
