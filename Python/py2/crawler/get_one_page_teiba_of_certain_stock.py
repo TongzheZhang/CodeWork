@@ -47,9 +47,9 @@ if __name__ == "__main__":
 
 
     n = 1
-    for i in range(1,13):
+    for i in range(1,13):#输入！页数范围
         print i,'pages'
-        mypage = OnePage(i,600848)
+        mypage = OnePage(i,600848)#输入！股票代码
         tiezi_list = mypage.getUrl()
 
         for i in tiezi_list:
