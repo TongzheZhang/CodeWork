@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
 
     n = 1
-    for i in range(12,36):
+    for i in range(1,13):
         print i,'pages'
         mypage = OnePage(i,600848)
         tiezi_list = mypage.getUrl()
