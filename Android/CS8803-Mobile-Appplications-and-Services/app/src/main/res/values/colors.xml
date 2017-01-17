@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#475f8e</color>
+    <color name="accent_color">#f1c40f</color>
+
+    <color name="content_text_hint_color">#E0E0E0</color>
+    <color name="content_text_color">#777781</color>
+    <color name="title_text_color">#ffff</color>
+    <color name="progress_bar">#E0E0E0</color>
+    <color name="floating_action_button_color">#f1c40f</color>
+
+
+    <color name="received">#E0E0E0</color>
+    <color name="pending_my_wish_gift">#f1c40f</color>
+    <color name="pending_gift_from_friend">#f1c40f</color>
+
+</resources>

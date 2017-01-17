@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/nav_sub_menu_profile">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_name"
+                android:icon="@drawable/ic_face_black_24dp"
+                android:title="@string/nav_item_name" />
+            <item
+                android:id="@+id/navigation_item_email"
+                android:icon="@drawable/ic_mail_outline_black_24dp"
+                android:title="@string/nav_item_email" />
+            <item
+                android:id="@+id/navigation_item_birthday"
+                android:icon="@drawable/ic_cake_black_24dp"
+                android:title="@string/nav_item_birthday" />
+            <item
+                android:id="@+id/navigation_item_address"
+                android:icon="@drawable/ic_place_black_24dp"
+                android:title="@string/nav_item_shipping_address" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_sub_menu_setting">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_about_me"
+                android:icon="@drawable/ic_code_black_24dp"
+                android:title="@string/nav_sub_menu_about_me" />
+            <item
+                android:id="@+id/navigation_item_refresh"
+                android:icon="@drawable/ic_autorenew_black_24dp"
+                android:title="@string/nav_sub_menu_refresh" />
+            <item
+                android:id="@+id/navigation_item_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/nav_sub_menu_logout" />
+        </menu>
+    </item>
+
+</menu>

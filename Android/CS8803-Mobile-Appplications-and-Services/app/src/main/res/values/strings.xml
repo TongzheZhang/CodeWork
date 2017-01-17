@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Amazing Gifter</string>
+    <string name="facebook_app_id">1036730073091285</string>
+
+    <!-- Menu contents -->
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_search">Search</string>
+
+
+    <!-- Three tabs' titles -->
+    <string name="my_gifts">My Gifts</string>
+    <string name="friends">Friends</string>
+    <string name="summary">Summary</string>
+
+    <!-- Date picker -->
+    <string name="add_new_gift">Add New Gift</string>
+    <string name="choose_date">choose date</string>
+    <string name="due_date">Due Date</string>
+    <string name="reason">Reason</string>
+    <string name="gift">Gift</string>
+    <string name="search_from_ebay">Search From Ebay</string>
+    <string name="amazon">Amazon</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="item_detail">Item Detail</string>
+    <string name="visit_website">Visit Website</string>
+    <string name="pick_this">Pick This</string>
+    <string name="price">Price</string>
+    <string name="contribution">Contribution</string>
+    <string name="confirm">Confirm</string>
+    <string name="progress">Progress</string>
+    <string name="card_number">Card Number</string>
+    <string name="current_progress">Current Progress</string>
+    <string name="friend_gifts">Friend Gifts</string>
+    <string name="visit">Visit</string>
+    <string name="detail">Detail</string>
+    <string name="contributor_detail">Contributor Detail</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="address_line_1">Address line 1</string>
+    <string name="address_line_2">Address line 2</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">ZIP</string>
+    <string name="country">Country</string>
+    <string name="phone_number">Phone number</string>
+    <string name="modify">Modify</string>
+
+
+
+    <!-- Reason spinners -->
+    <string-array name="reason_array">
+        <item>Birthday</item>
+        <item>Christmas</item>
+        <item>Mothers\' Day</item>
+        <item>Fathers\' Day</item>
+        <item>Graduation</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- About me content -->
+    <string name="profile_picture">Profile picture</string>
+    <string name="username">Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="email">E-mail</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="payment">Payment</string>
+
+
+    <string name="keyword">find what you want...</string>
+    <string name="buy">buy</string>
+
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="firebase_url">https://amazinggifter-b2662.firebaseio.com/</string>
+
+
+    <!-- TEST 1 -->
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="loading">Loading…</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <!-- Drawer -->
+    <string name="nav_sub_menu_profile">Profile</string>
+    <string name="nav_item_name">Name</string>
+    <string name="nav_item_email">E-mail</string>
+    <string name="nav_item_birthday">Birthday</string>
+    <string name="nav_item_shipping_address">Shipping Address</string>
+    <string name="nav_sub_menu_setting">Setting</string>
+    <string name="nav_sub_menu_about_me">About Me</string>
+    <string name="nav_sub_menu_refresh">Refresh</string>
+    <string name="nav_sub_menu_logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

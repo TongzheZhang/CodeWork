@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jluo80.amazinggifter">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        tools:overrideLibrary="com.paypal.android.sdk.payments" />
+
+    <!-- Internet permission added -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Meta-data added -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".ui.activity.FacebookLoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FacebookActivity added -->
+        <!-- For facebook login Facebook SDK provides an activity that will open while login. -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1036730073091285"
+            android:exported="true" />
+
+        <activity android:name=".ui.activity.AddGiftsActivity" />
+        <activity android:name=".ui.activity.EbaySearchActivity" />
+        <activity android:name=".ui.basic.BaseActivity" />
+        <activity android:name=".ui.activity.MainScreenActivity" />
+        <activity android:name=".ui.activity.ItemDetailActivity" />
+        <activity android:name=".ui.activity.ContributionActivity" />
+        <activity android:name=".ui.activity.FriendGiftActivity" />
+        <activity android:name=".ui.activity.ContributorActivity" />
+        <activity android:name=".ui.activity.ShippingAddressActivity" />
+        <activity android:name=".ui.activity.ShippingAddressModifyActivity" />
+    </application>
+
+</manifest>
