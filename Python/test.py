@@ -1,17 +1,9 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-#test
+"""
+Created on Thu Mar 23 19:21:45 2017
 
-import numpy as np
-import random as rand
-import time
-import math
-from sklearn import linear_model
+@author: tongzhezhang
+"""
 
-
-print 'before main'
-#run the code to test
-if __name__=="__main__":
-
-    print 'test in main'
-    print 'test after last sentence'
+print 'i am test program'
